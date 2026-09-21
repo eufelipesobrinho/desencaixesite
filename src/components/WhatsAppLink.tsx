@@ -32,12 +32,15 @@ export function WhatsAppLink({
       target="_blank"
       rel="noopener noreferrer"
       aria-label={ariaLabel ?? `Falar com ${site.professional} pelo WhatsApp`}
-      onClick={() =>
+      onClick={() => {
+        if (typeof window.fbq === "function") {
+          window.fbq("track", "Contact");
+        }
         track("whatsapp_click", {
           location,
           message_key: messageKey,
-        })
-      }
+        });
+      }}
     >
       {children}
     </a>

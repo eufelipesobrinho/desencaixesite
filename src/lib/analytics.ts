@@ -18,12 +18,8 @@ export function track(
     window.gtag("event", event, params);
   }
 
-  if (typeof window.fbq === "function") {
-    if (event === "whatsapp_click" || event === "cta_click") {
-      window.fbq("track", "Contact", { content_name: event, ...params });
-    } else {
-      window.fbq("trackCustom", event, params);
-    }
+  if (typeof window.fbq === "function" && event !== "whatsapp_click") {
+    window.fbq("trackCustom", event, params);
   }
 }
 
@@ -56,7 +52,7 @@ export function initAnalytics() {
     window.gtag("config", ga4Id);
   }
 
-  if (pixelId) {
+  if (pixelId && typeof window.fbq !== "function") {
     type FbqFn = ((...args: unknown[]) => void) & {
       queue: unknown[][];
       loaded: boolean;

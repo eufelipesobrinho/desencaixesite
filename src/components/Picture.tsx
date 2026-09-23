@@ -58,7 +58,7 @@ export function Logo({
       <img
         className={`brand-logo ${className}`}
         src={logoLightUrl}
-        alt="Desencaixe — Clínica Online. Marta Lima Psicóloga"
+        alt="Desencaixe — Clínica Online. Marta Ferreira Lima Psicóloga"
         width="520"
         height="90"
         decoding="async"
@@ -72,7 +72,7 @@ export function Logo({
       <img
         className={`brand-logo ${className}`}
         src="/images/logo.png"
-        alt="Desencaixe — Clínica Online. Marta Lima Psicóloga"
+        alt="Desencaixe — Clínica Online. Marta Ferreira Lima Psicóloga"
         width="520"
         height="90"
         decoding="async"

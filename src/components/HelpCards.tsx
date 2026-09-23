@@ -8,6 +8,11 @@ const icons = [
   "M4 16l6-6 4 4 6-8",
   "M12 3l8 4v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V7l8-4Z",
   "M5 19V5h14M9 15l3-3 3 3 4-4",
+  "M4 12c2-4 4 4 6 0s4 4 6 0 4 4 6 0",
+  "M12 17.3 6.6 20l1-6.1L3.2 9.7l6.2-.9L12 3.2l2.6 5.6 6.2.9-4.4 4.3 1 6.1Z",
+  "M12 4v16M8 8h5a3 3 0 0 1 0 6H8",
+  "M5 16c1.5-3 4-5 7-5s5.5 2 7 5M8 9a4 4 0 1 1 8 0",
+  "M12 5a7 7 0 1 1-4.95 2.05M12 9v3.5l2 1.2",
 ];
 
 export function HelpCards() {
@@ -28,7 +33,7 @@ export function HelpCards() {
               <span className="card-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24">
                   <path
-                    d={icons[index]}
+                    d={icons[index] ?? icons[0]}
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="1.6"

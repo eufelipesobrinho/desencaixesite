@@ -1,7 +1,8 @@
 export const site = {
   brand: "Desencaixe",
   brandLine: "Clínica Online de Psicologia",
-  professional: "Marta Lima",
+  professional: "Marta Ferreira Lima",
+  professionalShort: "Marta F. Lima",
   role: "Psicóloga",
   crp: "CRP 21/07013",
   approach: "Análise do Comportamento",
@@ -11,10 +12,11 @@ export const site = {
   whatsappDisplay: "+55 86 99549-8665",
   whatsappE164: "5586995498665",
   attendance: "Online",
-  title: "Marta Lima Psicóloga | Psicoterapia Online | Desencaixe",
-  audience: "Mulheres de 12 a 35 anos",
+  title: "Marta Ferreira Lima Psicóloga | Psicoterapia Online | Desencaixe",
+  audience:
+    "Mulheres de 18 a 45 anos e adolescentes do sexo feminino a partir de 13 anos",
   description:
-    "Psicoterapia online para mulheres de 12 a 35 anos com Marta Lima, psicóloga com atuação pela Análise do Comportamento. Conheça a Desencaixe e fale pelo WhatsApp.",
+    "Psicoterapia online para mulheres de 18 a 45 anos e adolescentes a partir de 13 anos, com Marta Ferreira Lima. Conheça a Desencaixe e fale pelo WhatsApp.",
 } as const;
 
 export const nav = [
@@ -82,6 +84,26 @@ export const helpCards = [
   {
     title: "Resolutividade",
     text: "Ampliação de repertórios para lidar com problemas e situações do cotidiano.",
+  },
+  {
+    title: "Ansiedade",
+    text: "Gestão de ansiedade e pensamentos acelerados.",
+  },
+  {
+    title: "Autoestima",
+    text: "Desenvolvimento de confiança e valorização pessoal.",
+  },
+  {
+    title: "Autocobrança",
+    text: "Alívio da pressão e cobranças internas excessivas.",
+  },
+  {
+    title: "Depressão",
+    text: "Acompanhamento em processos de baixo humor e falta de energia.",
+  },
+  {
+    title: "Autoconhecimento",
+    text: "Compreensão de si mesma: explorando traços, padrões e forma de ser.",
   },
 ] as const;
 
@@ -192,7 +214,8 @@ export const faq = [
   },
   {
     question: "Qual o público da Marta?",
-    answer: "Mulheres de 12 a 35 anos.",
+    answer:
+      "Marta atende mulheres de 18 a 45 anos e adolescentes do sexo feminino a partir de 13 anos.",
   },
   {
     question: "Preciso saber exatamente o que tenho antes de procurar terapia?",

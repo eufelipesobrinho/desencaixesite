@@ -1079,13 +1079,6 @@ body.menu-open .wa-float {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .info-card:last-child {
-    grid-column: 1 / -1;
-    max-width: calc((100% - 2rem) / 3);
-    width: 100%;
-    justify-self: center;
-  }
-
   .formation-groups {
     grid-template-columns: 0.9fr 1.2fr 1fr;
     gap: 1.2rem;

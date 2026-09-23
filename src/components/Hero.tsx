@@ -63,7 +63,7 @@ export function Hero() {
             />
           </div>
           <p className="portrait-caption">
-            {site.professional}
+            {site.professionalShort}
             <span>
               {site.role} · {site.crp}
             </span>
